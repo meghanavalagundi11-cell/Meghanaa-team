@@ -18,6 +18,14 @@
   </body>
 </html>
 
+const search = document.querySelector('.search')
+const btn = document.querySelector('.btn')
+const input = document.querySelector('.input')
+
+btn.addEventListener('click', () => {
+    search.classList.toggle('active')
+    input.focus()
+})
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -76,13 +84,3 @@ body {
 .search.active .btn {
   transform: translateX(198px);
 }
-
-
-const search = document.querySelector('.search')
-const btn = document.querySelector('.btn')
-const input = document.querySelector('.input')
-
-btn.addEventListener('click', () => {
-    search.classList.toggle('active')
-    input.focus()
-})
